@@ -250,4 +250,4 @@ function processTextNode(textNode)
 
 walk(document.body);
 addHolderContent();
-addEventListenerByClass('bitcoinBalanceIcon', 'click', bbToggle); 
+addEventListenerByClass('bitcoinBalanceIcon', bbToggle); 
