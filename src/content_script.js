@@ -181,7 +181,7 @@ function bbToggle(){
     if (this.nextSibling.style.display == 'none') {
       this.nextSibling.style.display = 'inline';
     } else {
-      this.nextSibling.style.display = 'inline';
+      this.nextSibling.style.display = 'none';
     }
   }
 }
@@ -250,4 +250,4 @@ function processTextNode(textNode)
 
 walk(document.body);
 addHolderContent();
-addEventListenerByClass('bitcoinBalanceIcon', 'click', bbToggle); 
+addEventListenerByClass('bitcoinBalanceIcon', 'load', bbToggle); 
